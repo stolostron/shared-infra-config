@@ -6,6 +6,9 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: submariner
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:submariner'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

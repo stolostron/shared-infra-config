@@ -9,6 +9,9 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: squad-kui-Admins
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:kui-web-terminal'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
