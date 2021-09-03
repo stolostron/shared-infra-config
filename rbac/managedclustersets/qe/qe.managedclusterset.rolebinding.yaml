@@ -1,0 +1,18 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: qe-managedclusterset-admin
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: acm-qe
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: acm-qe-admin
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: qe
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: open-cluster-management:managedclusterset:admin:qe
