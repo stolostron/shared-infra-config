@@ -4,9 +4,6 @@ metadata:
   name: project-create
 rules:
   - verbs:
-      - get
-      - watch
-      - list
       - create
     apiGroups:
       - 'project.openshift.io'
