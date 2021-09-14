@@ -5,6 +5,7 @@ metadata:
 rules:
   - verbs:
       - create
+      - delete
     apiGroups:
       - 'project.openshift.io'
     resources:
