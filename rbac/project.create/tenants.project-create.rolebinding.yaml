@@ -1,0 +1,121 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: tenants-project-create
+  namespace: open-cluster-management
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: policy-grc
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: policy-grc-admins
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:acm-grc-security'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: Core-Services
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:acm-observability-china'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Search'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Search-Admin'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:acm-observability-usa'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'AppLifecycle'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'AppLifecycle-Admins'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:app'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: CICD
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:cicd'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'cluster-lifecycle-admin'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'cluster-lifecycle-team'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:cluster-lifecycle'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: console-squad
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:console-squad'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: far-edge
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:far-edge'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Installer'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'installer-admin'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:install'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: squad-kui
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: squad-kui-Admins
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:kui-web-terminal'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: managed-services
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:managed-services'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: acm-qe
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: acm-qe-admin
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: qe
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:qe'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Server Foundation'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Server Foundation Admins'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:server-foundation'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: submariner
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:submariner'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: project-create
