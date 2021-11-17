@@ -2,6 +2,12 @@
 
 This repository contains configuration for our Shared Infrastructure Cluster - known as "collective" - to be loaded as an ArgoCD/OpenShift GitOps application!
 
+## Contributing/Adding Configuration
+
+If you're adding configuration, please **make sure that you add a new folder for new squads/namespaces or place artifacts for existing squads/namespaces according to the mapping in the [consumers list](#Consumers)**.  If you *add a new squad/namespace*, please make sure that you **update the [consumers list](#Consumers)**.  
+
+Once you've drafted your changes, please open a PR and contact ACM CICD.  
+
 ## Consumers
 
 Below is a mapping of consumer RBAC groups to namespaces.  These namespaces are not yet federated by this repository.  
