@@ -11,4 +11,4 @@ spec:
   name: ansible-automation-platform-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: aap-operator.v2.0.1+0.1635279521
+  startingCSV: aap-operator.v2.0.1-0.1635283332
