@@ -5,3 +5,5 @@ resources:
   - ./namespace.yaml
   - ./operatorgroup.yaml
   - ./subscription.yaml
+  - ./automationcontroller.yaml
+  - ./automationhub.yaml
