@@ -4,7 +4,7 @@ metadata:
   name: ansible-automation-platform
   namespace: ansible-automation-platform
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/hook: PreSync
 spec: {}
   #targetNamespaces:
   #  - ansible-automation-platform

@@ -3,8 +3,6 @@ kind: AutomationController
 metadata:
   name: aap-automation-controller
   namespace: ansible-automation-platform
-  annotations:
-    argocd.argoproj.io/sync-wave: "3"
 spec:
   create_preload_data: true
   route_tls_termination_mechanism: Edge
