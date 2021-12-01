@@ -3,8 +3,6 @@ kind: Subscription
 metadata:
   labels:
     operators.coreos.com/ansible-automation-platform-operator.ansible-automation-platfor: ''
-  annotations:
-    argocd.argoproj.io/hook: PreSync
   name: ansible-automation-platform-operator
   namespace: ansible-automation-platform
 spec:
