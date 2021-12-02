@@ -9,12 +9,10 @@ spec:
   route_tls_termination_mechanism: Edge
   ingress_type: Route
   loadbalancer_port: 80
-  file_storage_size: 100Gi
   image_pull_policy: IfNotPresent
-  object_storage_s3_secret: aap-s3-secret-fctt74hmh6
+  object_storage_s3_secret: ap-s3-secret-952kfc7fgk
   web:
     replicas: 1
-  file_storage_access_mode: ReadWriteMany
   content:
     log_level: INFO
     replicas: 2
