@@ -8,6 +8,15 @@ If you're adding configuration, please **make sure that you add a new folder for
 
 Once you've drafted your changes, please open a PR and contact ACM CICD.  
 
+## This Repo Contains Multiple Apps
+
+This repo contains multiple applications.  ArgoCD does not support kustomize in recursive mode, so some applications based on Kustomize have to exist as their own standalone apps.  
+
+We'll attempt to keep a list of active applications and links to their documentation here:
+* RBAC - stored in the RBAC folder, no readme
+* Operators/ansible-automation-platform - [README](./operators/ansible-automation-platform/README.md)
+* cluster-artifacts - Empty placeholder for ClusterImageSets and ClusterPools
+
 ## Consumers
 
 Below is a mapping of consumer RBAC groups to namespaces.  These namespaces are not yet federated by this repository.  
