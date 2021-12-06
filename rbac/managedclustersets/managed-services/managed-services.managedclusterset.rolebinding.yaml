@@ -5,7 +5,7 @@ metadata:
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
-    name: managed-services
+    name: idp-for-the-masses
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:managed-services'
