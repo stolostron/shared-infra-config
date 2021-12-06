@@ -2,11 +2,24 @@
 
 This repository contains configuration for our Shared Infrastructure Cluster - known as "collective" - to be loaded as an ArgoCD/OpenShift GitOps application!
 
+## Deployment Prereqs
+
+The [prereqs](./prereqs) folder at the top-level holds some deployment pre-req configurations for ArgoCD's deployment on the target cluster (including RBAC and resource sizing modifications) as well as a ClusterRoleBinding which will allow the ArgoCD service account to carry out application deployments on the cluster.  These are handily stored for easy access when running test deploys of the various applications in this repo - or even production re-deploys!  
+
 ## Contributing/Adding Configuration
 
 If you're adding configuration, please **make sure that you add a new folder for new squads/namespaces or place artifacts for existing squads/namespaces according to the mapping in the [consumers list](#Consumers)**.  If you *add a new squad/namespace*, please make sure that you **update the [consumers list](#Consumers)**.  
 
 Once you've drafted your changes, please open a PR and contact ACM CICD.  
+
+## This Repo Contains Multiple Apps
+
+This repo contains multiple applications.  ArgoCD does not support kustomize in recursive mode, so some applications based on Kustomize have to exist as their own standalone apps.  
+
+We'll attempt to keep a list of active applications and links to their documentation here:
+* RBAC - stored in the RBAC folder, no readme
+* Operators/ansible-automation-platform - [README](./operators/ansible-automation-platform/README.md)
+* cluster-artifacts - Empty placeholder for ClusterImageSets and ClusterPools
 
 ## Consumers
 
