@@ -58,6 +58,9 @@ namespace-to-groups:
     groups:
     - Installer
     - installer-admin
+  - namespace: integrations
+    groups:
+    - management-integration
   - namespace: kui-web-terminal
     groups:
     - squad-kui
