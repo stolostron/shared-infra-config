@@ -115,6 +115,12 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:submariner'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: management-integration
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:integrations'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
