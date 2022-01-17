@@ -7,11 +7,11 @@ subjects:
     apiGroup: rbac.authorization.k8s.io
     name: shared-infrastructure-admins
   - kind: ServiceAccount
-    apiGroup: rbac.authorization.k8s.io
-    name: 'system:serviceaccount:cicd:gurnben'
+    name: gurnben
+    namespace: cicd
   - kind: ServiceAccount
-    apiGroup: rbac.authorization.k8s.io
-    name: 'system:serviceaccount:managedservices:gurnben'
+    name: gurnben
+    namespace: managed-services
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
