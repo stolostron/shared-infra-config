@@ -3,6 +3,8 @@ kind: ClusterPool
 metadata:
   name: aoc-sre-hub-eastus
   namespace: aoc-sre
+  labels:
+    cluster.open-cluster-management.io/clusterset: cicd
 spec:
   baseDomain: acmdev.azure.ansiblecloud.com
   imageSetRef:
