@@ -120,6 +120,12 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:integrations'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'aoc-sre'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:aoc-sre'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
