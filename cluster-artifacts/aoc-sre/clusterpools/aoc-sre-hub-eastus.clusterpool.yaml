@@ -1,7 +1,7 @@
 apiVersion: hive.openshift.io/v1
 kind: ClusterPool
 metadata:
-  name: aoc-sre-hub-eastus
+  name: aoc-sre-hubs-eastus
   namespace: aoc-sre
   labels:
     cluster.open-cluster-management.io/clusterset: cicd
