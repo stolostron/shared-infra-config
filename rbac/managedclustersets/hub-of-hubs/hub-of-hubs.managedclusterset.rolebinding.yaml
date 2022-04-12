@@ -1,7 +1,7 @@
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: managed-services-managedclusterset-admin
+  name: hub-of-hubs-managedclusterset-admin
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
@@ -15,4 +15,4 @@ subjects:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: open-cluster-management:managedclusterset:admin:managed-services
+  name: open-cluster-management:managedclusterset:admin:hub-of-hubs
