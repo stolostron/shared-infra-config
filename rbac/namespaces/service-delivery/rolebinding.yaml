@@ -1,18 +1,15 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: hub-of-hubs-namespace-access
-  namespace: acm-hub-of-hubs
+  name: service-delivery-namespace-access
+  namespace: service-delivery
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
-    name: "Team Hub of Hubs"
+    name: service-delivery
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
-    name: "Team Hub of Hubs Admins"
-  - kind: Group
-    apiGroup: rbac.authorization.k8s.io
-    name: 'system:serviceaccounts:acm-hub-of-hubs'
+    name: 'system:serviceaccounts:service-delivery'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
