@@ -142,6 +142,12 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:acm-hub-of-hubs'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: service-delivery
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:service-delivery'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
