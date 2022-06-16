@@ -4,3 +4,4 @@ metadata:
   name: img4.11.0-0.nightly-multi-2022-06-16-080705-x86-64
 spec:
   releaseImage: 'quay.io/openshift-release-dev/ocp-release:4.11.0-0.nightly-multi-2022-06-16-080705-x86_64'
+  
