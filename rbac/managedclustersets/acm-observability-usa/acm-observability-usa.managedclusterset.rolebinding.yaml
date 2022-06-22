@@ -5,6 +5,12 @@ metadata:
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: 'Observability'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Observability-Admin'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'Search'
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
