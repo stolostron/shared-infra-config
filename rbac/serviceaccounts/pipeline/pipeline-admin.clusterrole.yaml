@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pipeline-admin
+rules:
+  - verbs:
+      - get
+      - list
+      - create
+      - delete
+      - patch
+      - update
+      - watch
+    apiGroups:
+      - triggers.tekton.dev
+    resources:
+      - clusterinterceptors 
