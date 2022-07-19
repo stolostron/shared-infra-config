@@ -5,6 +5,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: pipeline
+    namespace: hypershift-devel
 roleRef:
   kind: ClusterRole
   name: pipeline-admin
