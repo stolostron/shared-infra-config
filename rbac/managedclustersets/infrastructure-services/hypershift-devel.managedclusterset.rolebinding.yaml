@@ -1,15 +1,15 @@
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: infrastructure-services-managedclusterset-admin
+  name: test-platform-managedclusterset-admin
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
-    name: infrastructure-services
+    name: test-platform
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
-    name: 'system:serviceaccounts:infrastructure-services'
+    name: 'system:serviceaccounts:test-platform'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: open-cluster-management:managedclusterset:admin:infrastructure-services
+  name: open-cluster-management:managedclusterset:admin:test-platform
