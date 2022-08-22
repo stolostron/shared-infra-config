@@ -9,6 +9,9 @@ subjects:
     name: policy-grc
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: hive
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: policy-grc-admins
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
