@@ -9,6 +9,9 @@ subjects:
     name: eng
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: hive
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:rh-acs-ci'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
