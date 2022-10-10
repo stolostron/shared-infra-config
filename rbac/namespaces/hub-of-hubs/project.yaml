@@ -4,7 +4,6 @@ metadata:
   name: acm-hub-of-hubs
   labels:
     kubernetes.io/metadata.name: acm-hub-of-hubs
-    openshift-pipelines.tekton.dev/namespace-reconcile-version: v1.6.3
 spec:	
   finalizers:	
     - kubernetes
