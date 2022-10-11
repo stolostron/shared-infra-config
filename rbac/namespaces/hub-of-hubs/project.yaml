@@ -1,9 +1,0 @@
-kind: Project
-apiVersion: project.openshift.io/v1
-metadata:
-  name: acm-hub-of-hubs
-  labels:
-    kubernetes.io/metadata.name: acm-hub-of-hubs
-spec:	
-  finalizers:	
-    - kubernetes
