@@ -1,0 +1,19 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: ocm-edit
+  namespace: open-cluster-management
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Search'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'Search-Admin'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:acm-observability-usa'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
