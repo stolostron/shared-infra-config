@@ -1,0 +1,19 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: app-hyp-namespace-access
+  namespace: app-hyp
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'AppLifecycle'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'AppLifecycle-Admins'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:app-hyp'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
