@@ -169,6 +169,9 @@ subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:hypershift-devel'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:app-hyp'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
