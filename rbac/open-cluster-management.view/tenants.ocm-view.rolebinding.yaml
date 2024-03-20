@@ -102,6 +102,12 @@ subjects:
     name: qe
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: obs-int-analytics
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:obs-int-analytics'
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:qe'
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
