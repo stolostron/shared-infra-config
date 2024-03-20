@@ -1,0 +1,15 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: obs-int-analytics-managedclusterset-admin
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: obs-int-analytics
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:obs-int-analytics'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: open-cluster-management:managedclusterset:admin:obs-int-analytics
