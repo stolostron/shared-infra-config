@@ -8,6 +8,9 @@ subjects:
     name: Core-Services
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: obs-int-analytics
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:acm-observability-china'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
