@@ -17,6 +17,9 @@ subjects:
     name: 'Search-Admin'
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: obs-int-analytics
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:acm-observability-usa'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
