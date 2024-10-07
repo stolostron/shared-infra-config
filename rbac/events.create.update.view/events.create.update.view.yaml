@@ -1,0 +1,8 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: events-create-update-view-hibernator
+rules:
+    - apiGroups: ["events.k8s.io"]
+      resources: ["events"]
+      verbs: ["create", "get", "update"]
