@@ -1,6 +1,0 @@
-apiVersion: hive.openshift.io/v1
-kind: ClusterImageSet
-metadata:
-  name: img4.10.13-multi
-spec:
-  releaseImage: 'quay.io/gurnben/imagesets:4.10.13'
