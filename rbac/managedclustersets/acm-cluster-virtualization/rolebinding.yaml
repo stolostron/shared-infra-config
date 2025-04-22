@@ -1,0 +1,15 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: acm-cluster-virtualization-managedclusterset-admin
+subjects:
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: acm-cluster-virtualization
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: 'system:serviceaccounts:acm-cluster-virtualization'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: open-cluster-management:managedclusterset:admin:acm-cluster-virtualization
