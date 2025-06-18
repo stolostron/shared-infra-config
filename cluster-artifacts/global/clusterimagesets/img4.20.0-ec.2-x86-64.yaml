@@ -1,0 +1,6 @@
+apiVersion: hive.openshift.io/v1
+kind: ClusterImageSet
+metadata:
+  name: img4.20.0-ec.2-x86-64
+spec:
+  releaseImage: quay.io/openshift-release-dev/ocp-release:4.20.0-ec.2-x86_64
