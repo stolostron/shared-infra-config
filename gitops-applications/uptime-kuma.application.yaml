@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: uptime-kuma-app
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    chart: uptime-kuma
+    repoURL: https://dirsigler.github.io/uptime-kuma-helm
+    targetRevision: 2.21.2
+    targetNamespace: uptime-kuma
+  destination:
+    name: in-cluster
+    createNamespace: true
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
