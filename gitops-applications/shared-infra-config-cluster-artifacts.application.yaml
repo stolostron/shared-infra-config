@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: shared-infra-config-cluster-artifacts
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: in-cluster
+  project: default
+  source:
+    directory:
+      recurse: true
+    path: cluster-artifacts
+    repoURL: https://github.com/stolostron/shared-infra-config
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
