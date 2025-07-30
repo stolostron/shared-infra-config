@@ -19,12 +19,14 @@ spec:
     - dns01:
         cnameStrategy: Follow
         route53:
-          accessKeyID: ACCESS_KEY
+          accessKeyIDSecretRef:
+            key: aws_access_key_id
+            name: console-aws-creds
           region: us-east-1
-          hostedZoneID: ZONE_ID
+          hostedZoneID: Z353L7N3UKR0RN
           secretAccessKeySecretRef:
             key: aws_secret_access_key
-            name: aws-creds
+            name: console-aws-creds
       selector:
         matchLabels:
           use-dns01-solver: "true"
