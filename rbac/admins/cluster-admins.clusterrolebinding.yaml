@@ -10,6 +10,9 @@ subjects:
     name: gurnben
     namespace: cicd
   - kind: ServiceAccount
+    name: temp-admin
+    namespace: cicd
+  - kind: ServiceAccount
     name: gurnben
     namespace: managed-services
 roleRef:
