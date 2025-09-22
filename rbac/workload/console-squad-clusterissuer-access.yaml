@@ -6,6 +6,12 @@ metadata:
 subjects:
   - kind: Group
     apiGroup: rbac.authorization.k8s.io
+    name: console
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
+    name: console-admins
+  - kind: Group
+    apiGroup: rbac.authorization.k8s.io
     name: 'system:serviceaccounts:console-squad'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
