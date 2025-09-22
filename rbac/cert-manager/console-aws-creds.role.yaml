@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: console-aws-creds
+  namespace: openshift-operators
+rules:
+  - apiGroups:
+      - ''
+    resources:
+      - secret
+    verbs:
+      - '*'
+    resourceNames:
+      - console-aws-creds
