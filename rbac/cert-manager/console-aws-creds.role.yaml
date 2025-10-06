@@ -7,7 +7,7 @@ rules:
   - apiGroups:
       - ''
     resources:
-      - secret
+      - secrets
     verbs:
       - '*'
     resourceNames:
